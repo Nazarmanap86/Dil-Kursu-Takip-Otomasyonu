@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{52996AA0-47E6-48F1-80D6-22D1DE55AA6B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WindowsFormsApp4</RootNamespace>
+    <AssemblyName>WindowsFormsApp4</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Guna.UI2, Version=2.0.4.8, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
+      <HintPath>..\packages\Guna.UI2.WinForms.2.0.4.8\lib\net472\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AnaSayfa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AnaSayfa.Designer.cs">
+      <DependentUpon>AnaSayfa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kayıt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kayıt.Designer.cs">
+      <DependentUpon>Kayıt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KayıtYönetim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KayıtYönetim.Designer.cs">
+      <DependentUpon>KayıtYönetim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KursYazdır.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KursYazdır.Designer.cs">
+      <DependentUpon>KursYazdır.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ogrenciYazdır.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ogrenciYazdır.Designer.cs">
+      <DependentUpon>ogrenciYazdır.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OgrenciYonetim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OgrenciYonetim.Designer.cs">
+      <DependentUpon>OgrenciYonetim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PuanYazdır.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PuanYazdır.Designer.cs">
+      <DependentUpon>PuanYazdır.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PuanYönetim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PuanYönetim.Designer.cs">
+      <DependentUpon>PuanYönetim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="YeniKurs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YeniKurs.Designer.cs">
+      <DependentUpon>YeniKurs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="YeniPuan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YeniPuan.Designer.cs">
+      <DependentUpon>YeniPuan.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AnaSayfa.resx">
+      <DependentUpon>AnaSayfa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kayıt.resx">
+      <DependentUpon>Kayıt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KayıtYönetim.resx">
+      <DependentUpon>KayıtYönetim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KursYazdır.resx">
+      <DependentUpon>KursYazdır.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ogrenciYazdır.resx">
+      <DependentUpon>ogrenciYazdır.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OgrenciYonetim.resx">
+      <DependentUpon>OgrenciYonetim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="PuanYazdır.resx">
+      <DependentUpon>PuanYazdır.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PuanYönetim.resx">
+      <DependentUpon>PuanYönetim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YeniKurs.resx">
+      <DependentUpon>YeniKurs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YeniPuan.resx">
+      <DependentUpon>YeniPuan.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
